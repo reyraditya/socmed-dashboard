@@ -1,0 +1,74 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postCardWrapper {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.postCardBody {
+    padding: 0px !important;
+    margin-top: 10px;
+}
+
+.cardTitleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardTitleWrapper h5 {
+    margin: 0;
+}
+
+.buttonComments {
+    margin-top: 10px;
+}
+
+.buttonWrapper {
+    margin-left: 20px;
+}
+
+.customButton {
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 14px;
+}
+
+.addPostButton {
+    color:darkgreen;
+}
+
+.addPostButton:hover {
+    color:darkgreen;
+    font-weight: bold;
+}
+
+.addCommentButton {
+    color:dodgerblue;
+}
+
+.addCommentButton:hover {
+    color:dodgerblue;
+    font-weight: bold;
+}
+
+.editButton {
+    color: darkgoldenrod;
+}
+
+.editButton:hover {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+.deleteButton {
+    color: red;
+}
+
+.deleteButton:hover {
+    color: red;
+    font-weight: bold;
+}
