@@ -1,0 +1,27 @@
+.container {
+    padding: 3rem;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.innerWrapper {
+    width: 100%;
+    max-width: 1300px;
+}
+
+.sidebarWrapper {
+    min-width: 194px;
+    margin-right: 3.5rem;
+}
+
+.contentWrapper {
+    display: flex;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.content {
+    flex: 1;
+};
