@@ -1,0 +1,27 @@
+.cardWrapper {
+    margin-bottom: 20px;
+}
+
+.customButton {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.editButton {
+    color:darkgoldenrod;
+    margin-right: 20px;
+}
+
+.editButton:hover {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+
+.deleteButton {
+    color:red;
+}
+
+.deleteButton:hover {
+    color: red;
+    font-weight: bold;
+}
