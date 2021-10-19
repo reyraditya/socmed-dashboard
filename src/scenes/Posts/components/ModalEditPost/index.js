@@ -10,7 +10,6 @@ export default function ModalEditPosts(props) {
     const { isOpen, onClose, selectedPost, userid } = props;
     const dispatch = useDispatch();
     const alert = useAlert();
-    console.log('selectedPost', selectedPost);
 
     const [post, setPost] = useState({
         title: '',
