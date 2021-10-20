@@ -2,7 +2,7 @@
 
 ### Installation
 
-Before installing the project, please make sure you have node stable version (v14+) installed on your machine as react-p2p requires [Node.js](https://nodejs.org/) to run.
+Before installing the project, please make sure you have node stable version (v14+) installed on your machine as socmed-dashboard requires [Node.js](https://nodejs.org/) to run.
 
 To run the project locally:
 
