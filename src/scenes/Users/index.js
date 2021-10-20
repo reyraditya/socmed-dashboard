@@ -10,7 +10,6 @@ import {
     Button, 
     Card, 
     CardBody, 
-    CardText, 
     CardTitle 
 } from 'reactstrap';
 
@@ -43,14 +42,14 @@ export default function Users() {
             <CardBody>
                 <CardTitle className={styles.cardTitle}>
                     <h5>{user.name}</h5>
-                    <p>{user.email}</p>
+                    <span>{user.email}</span>
                 </CardTitle>
-                <CardText>
+                <CardBody style={{ padding: '0 0 10px 0' }}>
                     <div className={styles.cardText}>
-                        <p>Username: {user.username}</p>
-                        <p>Website: {user.website}</p>
+                        <span>Username: {user.username}</span>
+                        <span>Website: {user.website}</span>
                     </div>
-                </CardText>
+                </CardBody>
                 <div>
                     <Button 
                         color='success' 
