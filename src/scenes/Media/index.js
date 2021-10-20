@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useLayoutEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAlbum, fetchPhotos } from '../../actions/media';
@@ -16,7 +17,7 @@ import Layout from '../../components/Layout/Layout';
 import PhotoModal from './components/PhotoModal';
 
 export default function Media(props) {
-    const { id } = props.match.params;
+    const { match } = props;
     const { albums, photos } = useSelector(state => state.media);
     const [isPhotosModalOpen, setPhotoModal] = useState(false);
     const dispatch = useDispatch();
@@ -27,8 +28,8 @@ export default function Media(props) {
     }, []);
 
     useEffect(() => {
-        dispatch(fetchAlbum(id))
-    }, [dispatch, id]);
+        dispatch(fetchAlbum(match.params.id))
+    }, [dispatch]);
 
     const handleOpenPhotoModal = (albumId) => {
         dispatch(fetchPhotos(albumId));
