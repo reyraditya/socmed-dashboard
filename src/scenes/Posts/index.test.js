@@ -53,7 +53,7 @@ describe('testing Post scene', () => {
         expect(screen.getByText('laudantium enim quasi est quidem magnam')).toBeInTheDocument();
     });
 
-    it('should open add comment modal when button is clicked', async () => {
+    it('should open add comment modal when button is clicked', () => {
         render(
             <Provider store={store}>
                 <Posts match={{params: {id: 1}}} />
@@ -63,7 +63,7 @@ describe('testing Post scene', () => {
         waitFor(() => expect(screen.getByText('Write your comments')).toBeInTheDocument());
     });
 
-    it('should open delete post modal when button is clicked', async () => {
+    it('should open delete post modal when button is clicked', () => {
         render(
             <Provider store={store}>
                 <Posts match={{params: {id: 1}}} />
@@ -73,7 +73,7 @@ describe('testing Post scene', () => {
         waitFor(() => expect(screen.getByText('Are you sure you want to delete this post?')).toBeInTheDocument());
     });
 
-    it('should open edit post modal when button is clicked', async () => {
+    it('should open edit post modal when button is clicked', () => {
         render(
             <Provider store={store}>
                 <Posts match={{params: {id: 1}}} />
@@ -83,7 +83,7 @@ describe('testing Post scene', () => {
         waitFor(() => expect(screen.getByText('Edit Post')).toBeInTheDocument());
     });
 
-    it('should open create post post modal when button is clicked', async () => {
+    it('should open create post post modal when button is clicked', () => {
         render(
             <Provider store={store}>
                 <Posts match={{params: {id: 1}}} />
