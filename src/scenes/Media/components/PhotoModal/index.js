@@ -6,7 +6,10 @@ import styles from './styles.module.scss';
 export default function PhotosModal(props) {
     const { isOpen, onClose, photosContent } = props;
     const [isDetailPhotoModalOpen, setDetailPhotoModal] = useState(false);
-    const [selectedPhoto, setSelectedPhoto] = useState({});
+    const [selectedPhoto, setSelectedPhoto] = useState({
+        url: '',
+        title: '',
+    });
     
     const handleOpenDetailPhotoModal = (details) => {
         setSelectedPhoto(details)
@@ -19,7 +22,7 @@ export default function PhotosModal(props) {
 
     const renderPhotos = photosContent && photosContent.map((photo, idx) => (
         <Card key={idx} className={styles.photoCardWrapper}>
-            <button onClick={() => handleOpenDetailPhotoModal(photo)} style={{ background: 'none', border: 'none', color: 'transparent', padding: '0' }}>
+            <button data-testid="button-open-detail-photo" onClick={() => handleOpenDetailPhotoModal(photo)} style={{ background: 'none', border: 'none', color: 'transparent', padding: '0' }}>
                 <CardImg src={photo.thumbnailUrl} alt="thumbnail photo" />
             </button>
         </Card>
